@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#0f0f0f] text-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-black/40 backdrop-blur-lg z-50 border-b border-white/10">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-2xl font-bold tracking-wide">Khadija</h1>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="#hero" class="hover:text-pink-400 duration-300">Home</a></li>
+        <li><a href="#skills" class="hover:text-pink-400 duration-300">Skills</a></li>
+        <li><a href="#services" class="hover:text-pink-400 duration-300">Services</a></li>
+        <li><a href="#experience" class="hover:text-pink-400 duration-300">Experience</a></li>
+        <li><a href="#contact" class="hover:text-pink-400 duration-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-3xl">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24">
+    <img src="https://images.unsplash.com/photo-1604964432806-254d07c11f32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww" class="w-40 h-40 rounded-full border-4 border-blue-500 shadow-2xl mb-6" />
+
+    <h2 class="text-5xl md:text-6xl font-bold leading-tight">
+      Hi, I'm <span class="text-pink-400">Khadija</span>
+    </h2>
+
+    <p class="mt-4 max-w-2xl text-gray-300 text-lg md:text-xl">
+      A passionate frontend developer crafting clean and modern user experiences.
+    </p>
+
+    <button class="mt-6 px-8 py-3 bg-pink-600 rounded-lg hover:bg-pink-700 duration-300 text-lg font-semibold shadow-lg">
+      Download CV
+    </button>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 px-6 bg-black/30 text-center border-t border-white/10">
+    <h2 class="text-4xl font-bold mb-12">Skills</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+      <div class="p-6 bg-white/5 rounded-xl hover:bg-white/10 duration-300 text-lg font-medium">HTML</div>
+      <div class="p-6 bg-white/5 rounded-xl hover:bg-white/10 duration-300 text-lg font-medium">CSS</div>
+      <div class="p-6 bg-white/5 rounded-xl hover:bg-white/10 duration-300 text-lg font-medium">JavaScript</div>
+      <div class="p-6 bg-white/5 rounded-xl hover:bg-white/10 duration-300 text-lg font-medium">Tailwind CSS</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-12">Services</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-white/5 p-8 rounded-2xl shadow-lg hover:-translate-y-2 duration-300 border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+        <p class="text-gray-300">Clean, modern, responsive website UI design.</p>
+      </div>
+
+      <div class="bg-white/5 p-8 rounded-2xl shadow-lg hover:-translate-y-2 duration-300 border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+        <p class="text-gray-300">Pixel-perfect frontend development with Tailwind.</p>
+      </div>
+
+      <div class="bg-white/5 p-8 rounded-2xl shadow-lg hover:-translate-y-2 duration-300 border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">Responsive UI</h3>
+        <p class="text-gray-300">Mobile-first responsive layout for all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-24 px-6 bg-black/30 text-center border-t border-white/10">
+    <h2 class="text-4xl font-bold mb-12">Work Experience</h2>
+
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="bg-white/5 p-8 rounded-xl text-left border border-white/10 hover:scale-[1.02] duration-300">
+        <h3 class="text-2xl font-semibold">Junior Frontend Developer</h3>
+        <p class="text-sm mt-2 text-gray-400">2023 - Present</p>
+        <p class="mt-3 text-gray-300">Building UI with Tailwind CSS, responsive layout, and modern frontend workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-12">Contact</h2>
+
+    <form class="max-w-xl mx-auto space-y-5">
+      <input type="text" placeholder="Your Name" class="w-full p-4 rounded-lg bg-white/5 border border-white/10 focus:outline-none" />
+      <input type="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-white/5 border border-white/10 focus:outline-none" />
+      <textarea placeholder="Message" class="w-full p-4 rounded-lg bg-white/5 border border-white/10 h-36 focus:outline-none"></textarea>
+
+      <button class="px-8 py-3 bg-pink-600 rounded-lg hover:bg-pink-700 duration-300 text-lg font-semibold shadow-lg w-full">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-black/40 border-t border-white/10">
+    <p class="text-gray-400">© 2025 Khadija. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
